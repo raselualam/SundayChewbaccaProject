@@ -5,14 +5,23 @@ import org.openqa.selenium.support.FindBy;
 
 public class EbayHomepageLocators {
 	
-	//Selenium Page Factory
+		//Selenium Page Factory
 	
-	//Search Text Box
+		//Search Text Box
 		@FindBy(xpath="//input[@placeholder='Search for anything']")
 		public WebElement txtbxSearch;
 	
 	
-	//Search Button
-		@FindBy(xpath="//input[@value='Search']")
+		//Search Button
+		@FindBy(xpath="//input[@value='Search2']")
 		public WebElement btnSearch;
+		
+		
+		//My Ebay Link
+		@FindBy(xpath="//a[@title='My eBay']")
+		public WebElement linkMyEbay;
+		
+		//Summary
+		@FindBy(xpath="//a[contains(text(),'Summary')]")
+		public WebElement linkSummary;
 }
