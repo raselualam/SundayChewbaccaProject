@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import upskill.ebay.pageElements.EbayHomepageLocators;
+import upskill.utilities.ReadExcelSheet;
 import upskill.utilities.SetupDrivers;
 
 public class EbayHomepageActions {
@@ -40,8 +41,9 @@ public class EbayHomepageActions {
 //						fluentWait.withMessage("Fluent Wait Time exceeded");
 	}
 	
-	public void searchShoes(){
-		EbayHomepageLocatorsObj.txtbxSearch.sendKeys("shoes");
+	public void searchShoes() throws Exception{
+//		EbayHomepageLocatorsObj.txtbxSearch.sendKeys("shoes");
+		EbayHomepageLocatorsObj.txtbxSearch.sendKeys(ReadExcelSheet.getMapData("search"));
 //		EbayHomepageLocatorsObj.btnSearch.click();
 		EbayHomepageLocatorsObj.btnSearch.sendKeys(Keys.ENTER);
 	}

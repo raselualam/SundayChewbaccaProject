@@ -13,7 +13,7 @@ public class EbayHomepageLocators {
 	
 	
 		//Search Button
-		@FindBy(xpath="//input[@value='Search2']")
+		@FindBy(xpath="//input[@value='Search']")
 		public WebElement btnSearch;
 		
 		
